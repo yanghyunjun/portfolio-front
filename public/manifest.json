@@ -1,0 +1,16 @@
+{
+  "name": "portfolio-hyunjun",
+  "short_name": "hyunjun",
+  "icons": [
+    {
+      "src": "static/image/thumbnail.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "background_color": "#FFFFFF",
+  "description": "hyunjun의 portfolio입니다. 천천히 둘러 보세요.",
+  "display": "standalone",
+  "start_url": "/",
+  "theme_color": "#FFFFFF"
+}
