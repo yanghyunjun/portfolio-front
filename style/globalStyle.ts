@@ -1,9 +1,11 @@
+import reset from "styled-reset";
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
+${reset}
 body{
     min-height: 100vh;
-    line-height:1.4;
+    line-height:1.2;
     margin:0px;
 }
 `;

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { NextPage } from "next";
 import Header from "../component/Header";
-import Banner from "../component/Banner/Banner";
+import Main from "../component/Main";
 
 const Container = styled.div``;
 
@@ -10,7 +10,7 @@ const index: NextPage = () => {
   return (
     <Container>
       <Header />
-      <Banner />
+      <Main />
     </Container>
   );
 };
