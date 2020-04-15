@@ -8,7 +8,7 @@ const Container = styled.div`
   width: 100%;
   .banner-background-img {
     width: 100%;
-    max-height: 30vh;
+    max-height: 256px;
     object-fit: cover;
     border-radius: 0px;
     opacity: 1;

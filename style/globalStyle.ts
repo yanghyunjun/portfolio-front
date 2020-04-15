@@ -8,6 +8,10 @@ body{
     line-height:1.2;
     margin:0px;
 }
+li{
+    list-style-type: disc;
+    list-style-position:inside;
+}
 `;
 
 export default GlobalStyles;
