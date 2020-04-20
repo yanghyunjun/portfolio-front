@@ -20,12 +20,12 @@ const Container = styled.div`
 const Activity: React.FC = () => {
   return (
     <Container>
-      <div className="Main-Category-title">👨‍💻 Activity</div>
+      <div className="Main-Activity-title">👨‍💻 Activity</div>
       <ul>
         {ActivitysData.map((activity, index) => (
           <li key={index}>
-            <span className="Main-Category-font">{activity.title}</span>
-            <span className="Main-Category-font">({activity.date})</span>
+            <span className="Main-Activity-font">{activity.title}</span>
+            <span className="Main-Activity-font">({activity.date})</span>
           </li>
         ))}
       </ul>

@@ -33,8 +33,6 @@ const Container = styled.div`
       font-size: 0.7em;
       margin-bottom: 18px;
     }
-    .Main-stack-wrapper {
-    }
   }
 `;
 
@@ -58,7 +56,6 @@ const Main: NextPage<IProps> = ({ gitData }) => {
         <Activity />
         <Prize />
         <Github gitData={gitData} />
-        <div className="Main-stack-wrapper"></div>
       </div>
     </Container>
   );

@@ -20,13 +20,13 @@ const Container = styled.div`
 const Prize: React.FC = () => {
   return (
     <Container>
-      <div className="Main-Category-title">🏆 Prize</div>
+      <div className="Main-Prize-title">🏆 Prize</div>
       <ul>
         {PrizesData.map((prize, index) => (
           <li key={index}>
-            <span className="Main-Category-font">{prize.title}</span>
-            <span className="Main-Category-font">{prize.prize}</span>
-            <span className="Main-Category-font">{prize.date}</span>
+            <span className="Main-Prize-font">{prize.title}</span>
+            <span className="Main-Prize-font">{prize.prize}</span>
+            <span className="Main-Prize-font">{prize.date}</span>
           </li>
         ))}
       </ul>

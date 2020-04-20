@@ -80,6 +80,15 @@ const Container = styled.div`
       }
     }
   }
+  .Main-github-descript {
+    max-width: 100%;
+    width: 100%;
+    white-space: pre-wrap;
+    word-break: break-word;
+    caret-color: rgb(55, 53, 47);
+    padding: 3px 2px;
+    font-size: 0.8em;
+  }
 `;
 
 interface IProps {
@@ -122,6 +131,9 @@ const Github: React.FC<IProps> = ({ gitData }) => {
             alt="yanghyunjun"
           />
         </div>
+      </div>
+      <div className="Main-github-descript">
+        개인 프로젝트와 팀 프로젝트를 진행하고 있는 GitHub 계정입니다.
       </div>
     </Container>
   );
