@@ -1,4 +1,4 @@
-export const User = {
+export const UserData = {
   name: "양현준",
   englishName: "Hyunjun Yang",
   title: "프론트엔드 엔지니어",
@@ -6,7 +6,7 @@ export const User = {
     "안녕하세요 웹&앱 제작 및 기술에 관심이 많은 프론트엔드 엔지니어 양현준 입니다.",
 };
 
-export const Img = [
+export const ImgData = [
   {
     imgName: "banner",
     url:
@@ -14,7 +14,7 @@ export const Img = [
   },
 ];
 
-export const Activitys = [
+export const ActivitysData = [
   {
     title: "Hanium Project Contest",
     date: "18/03/01~18/10/01",
@@ -48,7 +48,7 @@ export const Activitys = [
   },
 ];
 
-export const Prizes = [
+export const PrizesData = [
   {
     title: "Nomadcoder Hackathon",
     date: "20/01/29~20/03/29",
@@ -60,8 +60,11 @@ export const Prizes = [
     prize: "우수상",
   },
 ];
+export const GithubData = {
+  url: "https://github.com/yanghyunjun",
+};
 
-export const Stacks = [
+export const StacksData = [
   {
     name: "HTML",
   },

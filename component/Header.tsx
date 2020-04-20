@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { User } from "../data";
+import { UserData } from "../data";
 
 const Container = styled.div`
   width: 100%;
@@ -31,8 +31,8 @@ const Header: React.FC = () => {
           src="/static/image/thumbnail.png"
           alt=""
         />
-        <div className="header-username">{User.name}</div>
-        <div className="header-username">{User.englishName}</div>
+        <div className="header-username">{UserData.name}</div>
+        <div className="header-username">{UserData.englishName}</div>
       </div>
     </Container>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Img } from "../../data";
+import { ImgData } from "../../data";
 
 const Container = styled.div`
   display: flex;
@@ -27,7 +27,7 @@ const Container = styled.div`
 const Banner: React.FC = () => {
   return (
     <Container>
-      <img className="banner-background-img" src={Img[0]?.url} alt="" />
+      <img className="banner-background-img" src={ImgData[0]?.url} alt="" />
       <img
         className="banner-myprofile-img"
         src="/static/image/thumbnail.png"

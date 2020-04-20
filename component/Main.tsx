@@ -3,17 +3,17 @@ import styled from "styled-components";
 import { NextPage } from "next";
 import Banner from "./Banner/Banner";
 import Link from "next/link";
-import { User, Activitys, Prizes } from "../data";
+import { UserData } from "../data";
+import { GitType } from "../types/git";
+import Activity from "./Activity/Activity";
+import Prize from "./Prize/Prize";
+import Github from "./Github/Github";
 
 const Container = styled.div`
   .Main-Wrapper {
     padding: 105px;
     display: flex;
     flex-direction: column;
-    li {
-      margin: 7px;
-      font-size: 0.8em;
-    }
     .Main-username {
       display: flex;
       flex-wrap: wrap;
@@ -33,67 +33,32 @@ const Container = styled.div`
       font-size: 0.7em;
       margin-bottom: 18px;
     }
-    .Main-Category-title {
-      font-size: 0.9em;
-      font-weight: 600;
-      color: black;
-    }
-    .Main-Category-font {
-      margin-right: 5px;
-    }
-    .Main-Category-title-github {
-      font-size: 0.9em;
-      font-weight: 600;
-      color: black;
-      text-decoration: underline;
-      cursor: pointer;
+    .Main-stack-wrapper {
     }
   }
 `;
 
-const Main: NextPage = () => {
+interface IProps {
+  gitData: GitType;
+}
+
+const Main: NextPage<IProps> = ({ gitData }) => {
+  // console.log(gitData);
+  // const router = useRouter();
   return (
     <Container>
       <Banner />
       <div className="Main-Wrapper">
         <div className="Main-username">
-          <p>{User.name}</p>
-          <p>{User.englishName}</p>
+          <p>{UserData.name}</p>
+          <p>{UserData.englishName}</p>
         </div>
-        <div className="Main-title">{User.title}</div>
-        <div className="Main-descript">{User.descript}</div>
-        <div className="Main-Activity-wrapper">
-          <div className="Main-Category-title">👨‍💻 Activity</div>
-          <ul>
-            {Activitys.map((activity, index) => (
-              <li key={index}>
-                <span className="Main-Category-font">{activity.title}</span>
-                <span className="Main-Category-font">({activity.date})</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="Main-Prize-wrapper">
-          <div className="Main-Category-title">🏆 Prize</div>
-          <ul>
-            {Prizes.map((prize) => (
-              <li>
-                <span className="Main-Category-font">{prize.title}</span>
-                <span className="Main-Category-font">{prize.prize}</span>
-                <span className="Main-Category-font">{prize.date}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="Main-gihbuh-wrapper">
-          <div
-            role="button"
-            className="Main-Category-title-github"
-            onClick={() => window.open("https://github.com/yanghyunjun")}
-          >
-            🐙 Github
-          </div>
-        </div>
+        <div className="Main-title">{UserData.title}</div>
+        <div className="Main-descript">{UserData.descript}</div>
+        <Activity />
+        <Prize />
+        <Github gitData={gitData} />
+        <div className="Main-stack-wrapper"></div>
       </div>
     </Container>
   );
