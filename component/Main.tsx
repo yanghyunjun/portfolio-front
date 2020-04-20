@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { NextPage } from "next";
 import Banner from "./Banner/Banner";
-import Link from "next/link";
 import { UserData } from "../data";
 import { GitType } from "../types/git";
 import Activity from "./Activity/Activity";

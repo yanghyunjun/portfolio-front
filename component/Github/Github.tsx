@@ -19,7 +19,6 @@ const Container = styled.div`
     border: 1px solid rgba(55, 53, 47, 0.16);
     border-radius: 3px;
     display: flex;
-    flex-wrap: wrap;
     overflow: hidden;
     justify-content: space-between;
     :hover {
