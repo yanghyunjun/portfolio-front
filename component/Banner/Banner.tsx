@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { ImgData } from "../../data";
+import Avata from "./Avata";
 
 const Container = styled.div`
   display: flex;
@@ -14,27 +15,35 @@ const Container = styled.div`
     opacity: 1;
     object-position: center 50%;
   }
-  .banner-myprofile-img {
-    margin-left: 105px;
-    margin-top: 195px;
-    width: 110px;
-    height: 110px;
-    position: absolute;
-    z-index: 10;
-  }
 `;
 
-const Banner: React.FC = () => {
-  return (
-    <Container>
-      <img className="banner-background-img" src={ImgData[0]?.url} alt="" />
-      <img
-        className="banner-myprofile-img"
-        src="/static/image/thumbnail.png"
-        alt=""
-      />
-    </Container>
-  );
+interface IProps {
+  avata: "exit" | "none";
+}
+
+const Banner: React.FC<IProps> = ({ avata }) => {
+  switch (avata) {
+    case "exit":
+      return (
+        <Container>
+          <img className="banner-background-img" src={ImgData[0]?.url} alt="" />
+          <Avata />
+        </Container>
+      );
+    case "none":
+      return (
+        <Container>
+          <img className="banner-background-img" src={ImgData[0]?.url} alt="" />
+        </Container>
+      );
+    default:
+      return (
+        <Container>
+          <img className="banner-background-img" src={ImgData[0]?.url} alt="" />
+          <Avata />
+        </Container>
+      );
+  }
 };
 
 export default Banner;

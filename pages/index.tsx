@@ -16,7 +16,6 @@ interface IProps {
 const index: NextPage<IProps> = ({ gitData }) => {
   return (
     <Container>
-      <Header />
       <Main gitData={gitData} />
     </Container>
   );
@@ -24,9 +23,9 @@ const index: NextPage<IProps> = ({ gitData }) => {
 
 index.getInitialProps = async () => {
   try {
-    const dataRes = await fetch("https://api.github.com/users/yanghyunjun");
-    const data = await dataRes.json();
-    return { gitData: data };
+    const gitDataRes = await fetch("https://api.github.com/users/yanghyunjun");
+    const gitData = await gitDataRes.json();
+    return { gitData };
   } catch (e) {
     console.log(e);
     return { gitData: [] };

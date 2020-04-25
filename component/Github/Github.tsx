@@ -4,8 +4,8 @@ import { GitType } from "../../types/git";
 
 const Container = styled.div`
   .Main-github-title {
-    font-size: 0.9em;
-    font-weight: 600;
+    font-size: 1.2em;
+    font-weight: 500;
     color: black;
     text-decoration: underline;
     cursor: pointer;
@@ -86,7 +86,8 @@ const Container = styled.div`
     word-break: break-word;
     caret-color: rgb(55, 53, 47);
     padding: 3px 2px;
-    font-size: 0.8em;
+    font-size: 0.9em;
+    margin-bottom: 12px;
   }
 `;
 

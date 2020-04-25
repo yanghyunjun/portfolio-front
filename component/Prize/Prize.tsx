@@ -5,11 +5,11 @@ import { PrizesData } from "../../data";
 const Container = styled.div`
   li {
     margin: 7px;
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
   .Main-Prize-title {
-    font-size: 0.9em;
-    font-weight: 600;
+    font-size: 1.2em;
+    font-weight: 500;
     color: black;
   }
   .Main-Prize-font {

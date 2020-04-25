@@ -77,7 +77,7 @@ export const StacksData = [
     name: "TypeScript",
   },
   {
-    name: "React",
+    name: "React/React Hooks",
   },
   { name: "Redux" },
   { name: "nextJS" },
@@ -89,5 +89,60 @@ export const StacksData = [
   },
   {
     name: "Git",
+  },
+];
+
+export const PersonalProjectData = [
+  {
+    title: "",
+    website: {
+      title: "",
+      text: "",
+      url: "",
+    },
+    context: "",
+    repository: "",
+    stack: [],
+  },
+];
+
+export const TeamProjectData = [
+  {
+    title: "goodReadsKr",
+    img: [
+      "/static/image/goodreads_web.png",
+      "/static/image/goodreads_mobile.png",
+    ],
+    website: {
+      title: "goodReadsKr",
+      text: "goodReads 한국어버전 클론코딩&리빌딩",
+      url: "https://goodreadskr.jerrynim.com/",
+    },
+    context:
+      "NextJS를 이용한 첫 프로젝트로 기존 geedreads 홈페이지를 좀더 세련되게 디자인 하고 책판매를 제외한 모든 서비스 적인면에서 완성도를 더욱 높이고자 한 프로젝트입니다. 홈페이지내에서 검색할수있을 뿐만아니라 책을 추가할때는 인증된 책만 등록 할 수 있게 하기위해 책의 고유번호 ISBN을 이용했고 외부사이트에 등록되어있는 책을 쉽게 검색해서 추가할수있도록 만들었습니다.",
+    repository: {
+      title: "Nomad-copyChu",
+      text: "goodReads 한국어버전 클론코딩&리빌딩",
+    },
+    stack: [
+      "React",
+      "React Hooks",
+      "TypeScript",
+      "NextJS",
+      "Eslint",
+      "Prisma",
+      "Graphql",
+    ],
+  },
+  {
+    title: "네이버 실시간 검색 확장앱",
+    img: [""],
+    website: { title: "", text: "", url: "" },
+    context: "네이버실시간앱",
+    repository: {
+      title: "naverRealtimeSearch-chrome-app",
+      text: "chrome Extension App",
+    },
+    stack: ["React", "Javascript"],
   },
 ];
