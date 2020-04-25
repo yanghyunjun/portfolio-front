@@ -5,9 +5,9 @@ import { TeamProjectData } from "../../../data";
 const Container = styled.div`
   display: flex;
   justify-content: center;
-  @media (max-width: 915px) {
+  @media (max-width: 820px) {
     justify-content: flex-start;
-    margin-left: 120px;
+    margin-left: 50px;
   }
   @media (max-width: 415px) {
     margin-left: 30px;
@@ -16,31 +16,30 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     .team-project-title {
-      font-size: 40px;
+      font-size: 1.8em;
       font-weight: 700;
       margin-bottom: 30px;
       margin-top: 30px;
     }
     .team-project-img-wrapper {
       display: flex;
-      /* width: 100%; */
       .team-project-img {
         width: auto;
         height: auto;
-        max-width: 500px;
-        max-height: 600px;
+        max-width: 600px;
+        max-height: 700px;
         margin-right: 20px;
         @media (max-width: 1120px) {
+          max-width: 500px;
+          max-height: 600px;
+        }
+        @media (max-width: 820px) {
           max-width: 400px;
           max-height: 500px;
         }
-        @media (max-width: 820px) {
-          max-width: 300px;
-          max-height: 400px;
-        }
         @media (max-width: 720px) {
-          max-width: 250px;
-          max-height: 350px;
+          max-width: 350px;
+          max-height: 450px;
         }
       }
     }
@@ -81,13 +80,17 @@ const Container = styled.div`
       }
     }
     .team-project-website-wrapper {
-      width: 95%;
+      width: calc(100% - 20px);
     }
     .team-project-content-wrapper {
-      width: 95%;
+      word-break: normal;
+      white-space: normal;
+      max-width: 600px;
+      @media (max-width: 720px) {
+        width: calc(100% - 20px);
+      }
       .team-project-content {
         width: auto;
-        max-width: 800px;
         font-size: 0.9em;
       }
     }
@@ -98,7 +101,7 @@ const Container = styled.div`
       margin-top: 20px;
     }
     .team-project-repository-wrapper {
-      width: 95%;
+      width: calc(100% - 20px);
     }
     .team-project-stack-wrapper {
       margin-bottom: 40px;

@@ -13,10 +13,13 @@ const Container = styled.div`
     font-weight: 600;
     color: #636363;
   }
-  .Main-Project-Team-list {
-    margin-right: 5px;
-    font-size: 0.9em;
-    color: #636363;
+  .Main-Project-Team-list-wrapper {
+    margin-bottom: 8px;
+    .Main-Project-Team-list {
+      margin-right: 5px;
+      font-size: 0.9em;
+      color: #636363;
+    }
   }
 `;
 
@@ -26,7 +29,7 @@ const Team: NextPage = () => {
       <div className="Main-Project-Team-title">팀</div>
       <ul>
         {TeamProjectData.map((team, index) => (
-          <div key={index}>
+          <div className="Main-Project-Team-list-wrapper" key={index}>
             <Link href="project/team/[title]" as={`project/team/${team.title}`}>
               <a className="Main-Project-Team-list">{team.title}</a>
             </Link>

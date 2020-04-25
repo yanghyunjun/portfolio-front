@@ -94,15 +94,68 @@ export const StacksData = [
 
 export const PersonalProjectData = [
   {
-    title: "",
+    title: "junstagram",
+    img: ["/static/image/junstagram.png"],
     website: {
       title: "",
       text: "",
       url: "",
     },
-    context: "",
-    repository: "",
-    stack: [],
+    context:
+      "React/Hooks를 이용한 instagram 클론 코딩입니다. 서버는 prisma로 개발했으며 기본적인 sns의 기능인 태그/팔로우/좋아요 기능을 넣은 간단한 sns웹 프로젝트 입니다.",
+    repository: {
+      title: "yanghyunjun/junstagram-frontend",
+      text: "Frontend for instaclone 2.0 (Graphql + hooks)",
+    },
+    stack: ["javacript", "React", "React Hooks", "prisma", "graphql"],
+  },
+  {
+    title: "Todo list",
+    img: ["/static/image/vanilla_todolist.PNG"],
+    website: {
+      title: "",
+      text: "",
+      url: "",
+    },
+    context:
+      "이프로젝트는 VanillaJS를 통해 기본적인 javascript의 문법 이해도를 높인프로젝트입니다. 간단한 toDoList 추가/삭제 기능이있고, 배경화면은 랜덤으로 바뀌게 만들었습니다. ",
+    repository: {
+      title: "yanghyunjun/toDoListPage",
+      text: "Create ToDoList HomePage Use to VanillaJS ",
+    },
+    stack: ["javacript", "VanillaJS"],
+  },
+  {
+    title: "Movie_app_2019",
+    img: ["/static/image/movie_app_2019.PNG"],
+    website: {
+      title: "movie_app_2019",
+      text: "React JS Fundamentals App",
+      url: "https://yanghyunjun.github.io/movie_app_2019/",
+    },
+    context:
+      "Moive의 장르,연도,제목과 썸네일등을 보여주는 App 입니다. 페이지에 필요한 movie data들은 외부 api를 통해 데이터를 받아서 랜더링해준후 보여주는 간단한 기능의 웹페이지 입니다.",
+    repository: {
+      title: "yanghyunjun/movie_app_2019",
+      text: "React JS Fundamentals App",
+    },
+    stack: ["javacript", "React"],
+  },
+  {
+    title: "Portfolio",
+    img: ["/static/image/portfolio.PNG"],
+    website: {
+      title: "",
+      text: "",
+      url: "",
+    },
+    context:
+      "나의 정보를 보여주는 포트폴리오 페이지로서 여태까지 공부한 React,hook,javacript,typescript,NextJS 를이용해 https://notion.so/ 블로그 페이지를 클론코딩하여 나만의 웹페이지로 만든 프로젝트입니다.",
+    repository: {
+      title: "yanghyunjun/portfolio-front",
+      text: "Portfolio use to Typescript and NextJS",
+    },
+    stack: ["javacript", "React", "React Hooks", "NextJS"],
   },
 ];
 
@@ -136,11 +189,12 @@ export const TeamProjectData = [
   },
   {
     title: "네이버 실시간 검색 확장앱",
-    img: [""],
+    img: ["/static/gif/naverSearchApp.gif"],
     website: { title: "", text: "", url: "" },
-    context: "네이버실시간앱",
+    context:
+      "18년도 겨울 처음으로 React를 사용한 프로젝트로 네이버의 실시간 키워드를 구글링하면서 간편하게 보고 싶다는 아이디어에서 시작한 프로젝트입니다.",
     repository: {
-      title: "naverRealtimeSearch-chrome-app",
+      title: "yanghyunjun/NaverSearchWordExtension",
       text: "chrome Extension App",
     },
     stack: ["React", "Javascript"],
