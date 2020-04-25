@@ -15,6 +15,9 @@ const Container = styled.div`
     padding: 105px;
     display: flex;
     flex-direction: column;
+    @media (max-width: 420px) {
+      padding: 75px;
+    }
     .Main-username {
       display: flex;
       flex-wrap: wrap;
@@ -34,6 +37,11 @@ const Container = styled.div`
     .Main-descript {
       font-size: 0.9em;
       margin-bottom: 18px;
+    }
+    .Main-email {
+      margin-top: 80px;
+      font-weight: 600;
+      font-size: 1.2em;
     }
   }
 `;
@@ -60,6 +68,7 @@ const Main: NextPage<IProps> = ({ gitData }) => {
         <Github gitData={gitData} />
         <Stack />
         <Project />
+        <div className="Main-email">📧 akakak231@gmail.com</div>
       </div>
     </Container>
   );

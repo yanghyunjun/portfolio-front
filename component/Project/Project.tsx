@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Team from "./Team/Team";
-import Porsnal from "./Porsnal/Porsnal";
+import Persnal from "./Personal/Persnal";
 
 const Container = styled.div`
   display: flex;
@@ -36,7 +36,7 @@ const Project: React.FC = () => {
         제가 공부하면서 만든 개인 및 대회에서 진행한 웹 프로젝트 작업물입니다.
       </div>
       <div className="Main-Project-list">
-        <Porsnal />
+        <Persnal />
         <Team />
       </div>
     </Container>

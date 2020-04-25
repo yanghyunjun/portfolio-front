@@ -107,7 +107,7 @@ export const PersonalProjectData = [
       title: "yanghyunjun/junstagram-frontend",
       text: "Frontend for instaclone 2.0 (Graphql + hooks)",
     },
-    stack: ["javacript", "React", "React Hooks", "prisma", "graphql"],
+    stack: ["Javacript", "React", "React Hooks", "Prisma", "Graphql"],
   },
   {
     title: "Todo list",
@@ -155,7 +155,7 @@ export const PersonalProjectData = [
       title: "yanghyunjun/portfolio-front",
       text: "Portfolio use to Typescript and NextJS",
     },
-    stack: ["javacript", "React", "React Hooks", "NextJS"],
+    stack: ["Javacript", "TypeScript", "React", "React Hooks", "NextJS"],
   },
 ];
 

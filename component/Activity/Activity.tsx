@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { ActivitysData } from "../../data";
+import Link from "next/link";
 
 const Container = styled.div`
   li {
@@ -12,8 +13,11 @@ const Container = styled.div`
     font-weight: 500;
     color: black;
   }
-  .Main-Activity-font {
-    margin-right: 5px;
+  .Main-Activity-font-wrapper {
+    color: black;
+    .Main-Activity-font {
+      margin-right: 5px;
+    }
   }
 `;
 
@@ -23,10 +27,17 @@ const Activity: React.FC = () => {
       <div className="Main-Activity-title">👨‍💻 Activity</div>
       <ul>
         {ActivitysData.map((activity, index) => (
-          <li key={index}>
-            <span className="Main-Activity-font">{activity.title}</span>
-            <span className="Main-Activity-font">({activity.date})</span>
-          </li>
+          <div key={index}>
+            <Link href="activity/[title]" as={`activity/${activity.title}`}>
+              <a className="Main-Activity-font-wrapper">
+                <li>
+                  <span className="Main-Activity-font">
+                    {activity.title} ({activity.date})
+                  </span>
+                </li>
+              </a>
+            </Link>
+          </div>
         ))}
       </ul>
     </Container>
