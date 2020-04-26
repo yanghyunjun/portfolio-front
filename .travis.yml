@@ -21,4 +21,3 @@ notifications: # 변경사항이 있을때 알림을 받을 수 있도록
     on_failure: always
     recipients:
       - akakak231@gmail.com
-#들여쓰기맞는지 항상 체크
