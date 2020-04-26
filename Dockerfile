@@ -16,4 +16,3 @@ RUN npm run build
 # 간편하게 맞추고자 8081 로 실행합니다.
 EXPOSE 8081 
 CMD [ "npm", "start" ]
-# Docker 추가
