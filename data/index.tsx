@@ -95,7 +95,7 @@ export const StacksData = [
 export const PersonalProjectData = [
   {
     title: "junstagram",
-    img: ["/static/image/junstagram.png"],
+    img: ["/static/image/junstagram.PNG"],
     website: {
       title: "",
       text: "",
@@ -163,8 +163,8 @@ export const TeamProjectData = [
   {
     title: "goodReadsKr",
     img: [
-      "/static/image/goodreads_web.png",
-      "/static/image/goodreads_mobile.png",
+      "/static/image/goodreads_web.PNG",
+      "/static/image/goodreads_mobile.PNG",
     ],
     website: {
       title: "goodReadsKr",
