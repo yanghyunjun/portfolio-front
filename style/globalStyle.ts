@@ -1,17 +1,21 @@
 import reset from "styled-reset";
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle, css } from "styled-components";
 
-const GlobalStyles = createGlobalStyle`
-${reset}
-body{
+const globalstyles = css`
+  ${reset}
+  body {
     min-height: 100vh;
-    line-height:1.2;
-    margin:0px;
-}
-li{
+    line-height: 1.2;
+    margin: 0px;
+  }
+  li {
     list-style-type: disc;
-    list-style-position:inside;
-}
+    list-style-position: inside;
+  }
 `;
 
-export default GlobalStyles;
+const GlobalStyle = createGlobalStyle`
+    ${globalstyles}
+`;
+
+export default GlobalStyle;

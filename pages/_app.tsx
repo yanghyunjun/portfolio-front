@@ -1,11 +1,11 @@
 import { AppProps, AppInitialProps } from "next/app";
-import GlobalStyles from "../style/GlobalStyle";
+import GlobalStyle from "../style/GlobalStyle";
 import Header from "../component/Header";
 
 const MyApp = ({ Component, pageProps }: AppProps & AppInitialProps) => {
   return (
     <>
-      <GlobalStyles />
+      <GlobalStyle />
       <Header />
       <Component {...pageProps} />
     </>
