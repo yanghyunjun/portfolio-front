@@ -145,9 +145,9 @@ export const PersonalProjectData = [
     title: "Portfolio",
     img: ["/static/image/portfolio.PNG"],
     website: {
-      title: "",
-      text: "",
-      url: "",
+      title: "portfolio-front",
+      text: "nextJS/typescript",
+      url: "https://hyunjunpf.now.sh/",
     },
     context:
       "나의 정보를 보여주는 포트폴리오 페이지로서 여태까지 공부한 React,hook,javacript,typescript,NextJS 를이용해 https://notion.so/ 블로그 페이지를 클론코딩하여 나만의 웹페이지로 만든 프로젝트입니다.",
