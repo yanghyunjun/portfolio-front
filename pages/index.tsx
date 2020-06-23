@@ -1,9 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { NextPage } from "next";
-import Header from "../component/Header";
 import Main from "../component/Main";
-// import axios from "axios";
 import fetch from "isomorphic-unfetch";
 import { GitType } from "../types/git";
 

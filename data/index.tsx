@@ -157,6 +157,25 @@ export const PersonalProjectData = [
     },
     stack: ["Javacript", "TypeScript", "React", "React Hooks", "NextJS"],
   },
+  {
+    title: "COVID-19-page",
+    img: [
+      "/static/image/covid-19-web.png",
+      "/static/image/covid-19-mobile.png",
+    ],
+    website: {
+      title: "portfolio-frontcovid-19-Info_hyunjun",
+      text: "nextJS/typescript",
+      url: "https://covid19-hyunjun.now.sh/",
+    },
+    context:
+      "외부 API를 이용하여 현재 세계 상황 및 한국의 코로나 상황,공적마스크판매 정보 등을 알려주는 웹/앱 입니다. 외부API를 front에서 가져옴으로서 CORS:교차출처리소스공유 와 혼합콘텐츠방지 등 사용하려는 API가 제한적으로 설정되었지만 CORSProxy를 사용해 해결 하여 프로젝트를 완성 하였습니다.",
+    repository: {
+      title: "yanghyunjun/covid-19-page",
+      text: "API를이용한 코로나 정보 사이트",
+    },
+    stack: ["Javacript", "TypeScript", "React", "React Hooks", "NextJS"],
+  },
 ];
 
 export const TeamProjectData = [
