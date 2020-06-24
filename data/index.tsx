@@ -79,7 +79,6 @@ export const StacksData = [
   {
     name: "React/React Hooks",
   },
-  { name: "Redux" },
   { name: "nextJS" },
   {
     name: "GraphQL",
