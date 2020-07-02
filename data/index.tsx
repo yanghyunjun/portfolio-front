@@ -186,7 +186,7 @@ export const PersonalProjectData = [
     context:
       "DKTheckIn 회사의 알고리즘 과제로 시작한 프로젝트입니다. 그냥 알고리즘만 풀어도 되었지만 추가로 예외처리도 해주고 시각화를 하여 과제를 하나의 앱으로 재탄생 시킨 프로젝트 입니다. ",
     repository: {
-      title: "yanghyunjun/web-game",
+      title: "yanghyunjun/web_game",
       text: "알고리즘을 이용한 하나의 복불복 게임 사이트",
     },
     stack: ["Javacript", "TypeScript", "React", "React Hooks", "NextJS"],
