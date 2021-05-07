@@ -9,6 +9,7 @@ import Prize from "./Prize/Prize";
 import Github from "./Github/Github";
 import Stack from "./Stack/Stack";
 import Project from "./Project/Project";
+import Career from "./Career/Career";
 
 const Container = styled.div`
   .Main-Wrapper {
@@ -63,6 +64,7 @@ const Main: NextPage<IProps> = ({ gitData }) => {
         </div>
         <div className="Main-title">{UserData.title}</div>
         <div className="Main-descript">{UserData.descript}</div>
+        <Career />
         <Activity />
         <Prize />
         <Github gitData={gitData} />
