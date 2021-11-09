@@ -109,7 +109,7 @@ export const CareerData = [
 
       이번 프로젝트에서 개발적인 이슈로 경험했던것중 확실하게 내것으로 가져왔던 이슈는 redux-toolkit 사용시
       createAsyncThunk 사용시 해당 함수의 내부적 rejectWithValue 함수를 사용하여 API호출시 rejected되면
-      rejectWithValue에 꽂아줘야 extraReducer builder.rejected의 payload에 담긴다는점을 알게됐다. 
+      rejectWithValue에 꽂아줘야 extraReducer builder.rejected의 payload에 담긴다는점을 알게되었습니다.
       `,
   },
 ];
