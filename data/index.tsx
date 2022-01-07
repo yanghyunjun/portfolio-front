@@ -142,7 +142,10 @@ export const StacksData = [
     name: "vanilla JS",
   },
   {
-    name: "Sass",
+    name: "Sass(Scss)",
+  },
+  {
+    name: "jQuery"
   },
   {
     name: "TypeScript",
@@ -155,6 +158,9 @@ export const StacksData = [
   },
   {
     name: "RTK(redux/toolkit)",
+  },
+  {
+    name: "mobx",
   },
   {
     name: "Vue",
