@@ -154,6 +154,9 @@ export const StacksData = [
     name: "Redux",
   },
   {
+    name: "RTK(redux/toolkit)",
+  },
+  {
     name: "Vue",
   },
   {
